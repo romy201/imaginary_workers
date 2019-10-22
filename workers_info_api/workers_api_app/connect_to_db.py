@@ -124,12 +124,12 @@ for worker in workers_list_unorganized:
         worker_jobs.append(job[0][0])
 
     dict_worker = {
-        'ID': worker[0],
+        'worker_id': worker[0],
         'first_name': worker[1],
         'last_name': worker[2],
         'phone': worker[3],
         'salary': worker[4],
-        'job_or_jobs': worker_jobs
+        'jobs': worker_jobs
     }
     list_of_workers.append(dict_worker)
 
@@ -155,7 +155,7 @@ for job in jobs_list_unorganized:
 
     dict_job = {
         'name': job[1],
-        'paradigm': job_paradigms
+        'paradigms': job_paradigms
     }
     list_of_jobs.append(dict_job)
 
@@ -169,9 +169,11 @@ paradigm_list_unorganized = mycursor.fetchall()
 list_of_paradigms = []
 
 for paradigm in paradigm_list_unorganized:
-    list_of_paradigms.append(paradigm[0])
+    dict_paradigm = {'name': paradigm[0]}
+    list_of_paradigms.append(dict_paradigm)
 
 all_info['paradigms'] = list_of_paradigms
+
 
 with open('app_related_data/the_workers_info.json', 'w') as f:
     json.dump(all_info, f, indent=2)

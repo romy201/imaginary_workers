@@ -1,90 +1,90 @@
 {
   "workers": [
     {
-      "ID": 1,
+      "worker_id": 1,
       "first_name": "Bob",
       "last_name": "Espey",
       "phone": "054837363",
       "salary": "10,000",
-      "job_or_jobs": [
+      "jobs": [
         "Artist",
         "Designer"
       ]
     },
     {
-      "ID": 2,
+      "worker_id": 2,
       "first_name": "Kendal",
       "last_name": "Litwin",
       "phone": "027838494",
       "salary": "20,000",
-      "job_or_jobs": [
+      "jobs": [
         "Computer Programmer",
         "Designer"
       ]
     },
     {
-      "ID": 3,
+      "worker_id": 3,
       "first_name": "Arlie",
       "last_name": " Wedderburn",
       "phone": "09757632",
       "salary": "15,000",
-      "job_or_jobs": [
+      "jobs": [
         "Artist",
         "Computer Programmer"
       ]
     },
     {
-      "ID": 4,
+      "worker_id": 4,
       "first_name": "Emanuel",
       "last_name": "Stratton",
       "phone": "073842647",
       "salary": "40,000",
-      "job_or_jobs": [
+      "jobs": [
         "Statistician",
         "Artist",
         "Computer Programmer"
       ]
     },
     {
-      "ID": 5,
+      "worker_id": 5,
       "first_name": "Leonarda",
       "last_name": "Jarman",
       "phone": "0541728833",
       "salary": "40,000",
-      "job_or_jobs": [
+      "jobs": [
         "Designer"
       ]
     },
     {
-      "ID": 6,
+      "worker_id": 6,
       "first_name": "namefrom",
       "last_name": "namegenerator",
       "phone": "06857734",
       "salary": "10,000",
-      "job_or_jobs": [
+      "jobs": [
         "Computer Programmer",
         "Marketing Manager",
         "Statistician"
       ]
     },
     {
-      "ID": 7,
+      "worker_id": 7,
       "first_name": "Hipolito",
       "last_name": "Hernadez",
       "phone": "047563831",
       "salary": "20,000",
-      "job_or_jobs": [
+      "jobs": [
         "Designer",
         "Artist"
       ]
     },
     {
-      "ID": 8,
+      "worker_id": 8,
       "first_name": "Calandra",
       "last_name": "Colon",
       "phone": "087563739",
       "salary": "10,000",
-      "job_or_jobs": [
+      "jobs": [
         "Artist",
         "Designer",
         "Computer Programmer",
@@ -92,23 +92,23 @@
       ]
     },
     {
-      "ID": 9,
+      "worker_id": 9,
       "first_name": "Shawn",
       "last_name": "Eich",
       "phone": "0372648311",
       "salary": "10,000",
-      "job_or_jobs": [
+      "jobs": [
         "Computer Programmer",
         "Marketing Manager"
       ]
     },
     {
-      "ID": 10,
+      "worker_id": 10,
       "first_name": "Marva",
       "last_name": "Haack",
       "phone": "012847832",
       "salary": "15,000",
-      "job_or_jobs": [
+      "jobs": [
         "Computer Programmer",
         "Designer"
       ]
@@ -117,32 +117,32 @@
   "jobs": [
     {
       "name": "Designer",
-      "paradigm": [
+      "paradigms": [
         "design stuff"
       ]
     },
     {
       "name": "Statistician",
-      "paradigm": [
+      "paradigms": [
         "data"
       ]
     },
     {
       "name": "Marketing Manager",
-      "paradigm": [
+      "paradigms": [
         "data",
         "reference something silly"
       ]
     },
     {
       "name": "Artist",
-      "paradigm": [
+      "paradigms": [
         "design stuff"
       ]
     },
     {
       "name": "Computer Programmer",
-      "paradigm": [
+      "paradigms": [
         "design stuff",
         "data",
         "reference something silly"
@@ -150,8 +150,14 @@
     }
   ],
   "paradigms": [
-    "design stuff",
-    "data",
-    "reference something silly"
+    {
+      "name": "design stuff"
+    },
+    {
+      "name": "data"
+    },
+    {
+      "name": "reference something silly"
+    }
   ]
 }
