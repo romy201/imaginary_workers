@@ -23,7 +23,6 @@ def post_to(url_str):
 
 # post_to('paradigms')
 
-
 # post_to('jobs')
 
 # post_to('workers')
