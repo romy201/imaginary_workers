@@ -119,9 +119,7 @@ for worker in workers_list_unorganized:
     mycursor.execute(workers_jobs_que.format(worker[0]))
     worker_jobs_ids = mycursor.fetchall()
     for job in worker_jobs_ids:
-        mycursor.execute(specific_job_que.format(job[0]))
-        job = mycursor.fetchall()
-        worker_jobs.append(job[0][0])
+        worker_jobs.append("http://127.0.0.1:8000/jobs/{0}/".format(job[0]))
 
     dict_worker = {
         'worker_id': worker[0],
@@ -134,7 +132,6 @@ for worker in workers_list_unorganized:
     list_of_workers.append(dict_worker)
 
 all_info['workers'] = list_of_workers
-
 
 all_jobs_que = "SELECT * FROM jobs"
 jobs_paradigms_que = "SELECT paradigm_id FROM jobs_paradigms WHERE job_id = {0}"
@@ -149,9 +146,7 @@ for job in jobs_list_unorganized:
     mycursor.execute(jobs_paradigms_que.format(job[0]))
     jobs_paradigms_ids = mycursor.fetchall()
     for paradigm in jobs_paradigms_ids:
-        mycursor.execute(specific_paradigm_que.format(paradigm[0]))
-        paradigm = mycursor.fetchall()
-        job_paradigms.append(paradigm[0][0])
+        job_paradigms.append("http://127.0.0.1:8000/paradigms/{0}/".format(paradigm[0]))
 
     dict_job = {
         'name': job[1],

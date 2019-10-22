@@ -19,7 +19,7 @@ class Job(models.Model):
 
 
 class Worker(models.Model):
-    worker_id = models.IntegerField()
+    worker_id = models.IntegerField(unique=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     phone = models.CharField(max_length=50)
