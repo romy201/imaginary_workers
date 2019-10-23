@@ -1,0 +1,35 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>imaginary-workers</title>
+    <link rel="stylesheet" href="{% static 'html_styles/workers_list.css' %}">
+</head>
+<body>
+<div class="workers">
+    {% for worker in workers %}
+    Name: {{ worker.first_name }}<br/>
+    jobs: | {% for job in worker.jobs.all %}
+    <div class="tooltip" style="display: inline"> {{ job }} |
+
+                    <span class="tooltiptext" style="display: inline">paradigms: {% for job_object in jobs %}
+                        {% if job == job_object %}
+                            {% for paradigm in job_object.paradigms.all %}
+                        <div>{{ paradigm.name }}</div>
+                            {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    </span>
+        </div>
+
+
+
+
+    {% endfor %}
+    <br/>
+    <br/>
+    {% endfor %}
+    </div>
+</body>
+</html>

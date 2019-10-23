@@ -17,7 +17,7 @@ def post_to(url_str):
         data_python = json.load(json_f_d)
 
     for data_piece in range(len(data_python[url_str])):
-        r = requests.post('http://127.0.0.1:8000/{0}/'.format(url_str), data_python[url_str][data_piece], auth=auth)
+        r = requests.post('http://127.0.0.1:8000/data-base/{0}/'.format(url_str), data_python[url_str][data_piece], auth=auth)
         print(r.text)
 
 

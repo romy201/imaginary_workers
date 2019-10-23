@@ -108,7 +108,6 @@ mycursor = mydb.cursor()
 
 workers_query = "SELECT * FROM workers"
 workers_jobs_que = "SELECT job_id FROM workers_jobs WHERE worker_id = {0}"
-specific_job_que = "SELECT name FROM jobs WHERE id = {0}"
 mycursor.execute(workers_query)
 workers_list_unorganized = mycursor.fetchall()
 list_of_workers = []
@@ -135,7 +134,6 @@ all_info['workers'] = list_of_workers
 
 all_jobs_que = "SELECT * FROM jobs"
 jobs_paradigms_que = "SELECT paradigm_id FROM jobs_paradigms WHERE job_id = {0}"
-specific_paradigm_que = "SELECT name FROM paradigm WHERE id = {0}"
 list_of_jobs = []
 
 mycursor.execute(all_jobs_que)
