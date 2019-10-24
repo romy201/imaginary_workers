@@ -17,6 +17,6 @@ class JobSerializer(serializers.HyperlinkedModelSerializer):
 class WorkerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Worker
-        fields = ('id', 'url', 'worker_id', 'first_name', 'last_name', 'phone', 'salary', 'jobs')
+        fields = ('id', 'url', 'worker_id', 'first_name', 'last_name', 'phone', 'salary', 'jobs', 'image')
 
 

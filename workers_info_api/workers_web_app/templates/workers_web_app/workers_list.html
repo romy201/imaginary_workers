@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="{% static 'html_styles/workers_list.css' %}">
 </head>
 <body>
-<div class="workers">
+    <div class="workers">
     {% for worker in workers %}
-    Name: {{ worker.first_name }}<br/>
-    jobs: | {% for job in worker.jobs.all %}
-    <div class="tooltip" style="display: inline"> {{ job }} |
+    <div class="worker">
+    <img src="{% static 'workers_images/'%}{{worker.image}}">
+    <br/>
+        Name: {{ worker.first_name }}<br/>
+        Last name: {{ worker.last_name }}<br/>
+        Worker ID: {{ worker.worker_id }}<br/>
+        Phone: {{ worker.phone }}<br/>
+        Salary: {{ worker.salary }}<br/>
+      jobs: | {% for job in worker.jobs.all %}
 
+        <div class="tooltip" style="display: inline">  {{ job }} |
                     <span class="tooltiptext" style="display: inline">paradigms: {% for job_object in jobs %}
                         {% if job == job_object %}
                             {% for paradigm in job_object.paradigms.all %}
-                        <div>{{ paradigm.name }}</div>
+                            {{ paradigm.name }} <br/>
                             {% endfor %}
                         {% endif %}
                         {% endfor %}
                     </span>
         </div>
-
-
-
-
     {% endfor %}
-    <br/>
-    <br/>
+    </div>
     {% endfor %}
     </div>
 </body>

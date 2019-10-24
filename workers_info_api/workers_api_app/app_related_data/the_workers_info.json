@@ -7,8 +7,8 @@
       "phone": "054837363",
       "salary": "10,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/4/",
-        "http://127.0.0.1:8000/jobs/1/"
+        "http://127.0.0.1:8000/data-base/jobs/4/",
+        "http://127.0.0.1:8000/data-base/jobs/1/"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "phone": "027838494",
       "salary": "20,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/5/",
-        "http://127.0.0.1:8000/jobs/1/"
+        "http://127.0.0.1:8000/data-base/jobs/5/",
+        "http://127.0.0.1:8000/data-base/jobs/1/"
       ]
     },
     {
@@ -29,8 +29,8 @@
       "phone": "09757632",
       "salary": "15,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/4/",
-        "http://127.0.0.1:8000/jobs/5/"
+        "http://127.0.0.1:8000/data-base/jobs/4/",
+        "http://127.0.0.1:8000/data-base/jobs/5/"
       ]
     },
     {
@@ -40,9 +40,9 @@
       "phone": "073842647",
       "salary": "40,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/2/",
-        "http://127.0.0.1:8000/jobs/4/",
-        "http://127.0.0.1:8000/jobs/5/"
+        "http://127.0.0.1:8000/data-base/jobs/2/",
+        "http://127.0.0.1:8000/data-base/jobs/4/",
+        "http://127.0.0.1:8000/data-base/jobs/5/"
       ]
     },
     {
@@ -52,7 +52,7 @@
       "phone": "0541728833",
       "salary": "40,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/1/"
+        "http://127.0.0.1:8000/data-base/jobs/1/"
       ]
     },
     {
@@ -62,9 +62,9 @@
       "phone": "06857734",
       "salary": "10,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/5/",
-        "http://127.0.0.1:8000/jobs/3/",
-        "http://127.0.0.1:8000/jobs/2/"
+        "http://127.0.0.1:8000/data-base/jobs/5/",
+        "http://127.0.0.1:8000/data-base/jobs/3/",
+        "http://127.0.0.1:8000/data-base/jobs/2/"
       ]
     },
     {
@@ -74,8 +74,8 @@
       "phone": "047563831",
       "salary": "20,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/1/",
-        "http://127.0.0.1:8000/jobs/4/"
+        "http://127.0.0.1:8000/data-base/jobs/1/",
+        "http://127.0.0.1:8000/data-base/jobs/4/"
       ]
     },
     {
@@ -85,10 +85,10 @@
       "phone": "087563739",
       "salary": "10,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/4/",
-        "http://127.0.0.1:8000/jobs/1/",
-        "http://127.0.0.1:8000/jobs/5/",
-        "http://127.0.0.1:8000/jobs/3/"
+        "http://127.0.0.1:8000/data-base/jobs/4/",
+        "http://127.0.0.1:8000/data-base/jobs/1/",
+        "http://127.0.0.1:8000/data-base/jobs/5/",
+        "http://127.0.0.1:8000/data-base/jobs/3/"
       ]
     },
     {
@@ -98,8 +98,8 @@
       "phone": "0372648311",
       "salary": "10,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/5/",
-        "http://127.0.0.1:8000/jobs/3/"
+        "http://127.0.0.1:8000/data-base/jobs/5/",
+        "http://127.0.0.1:8000/data-base/jobs/3/"
       ]
     },
     {
@@ -109,8 +109,8 @@
       "phone": "012847832",
       "salary": "15,000",
       "jobs": [
-        "http://127.0.0.1:8000/jobs/5/",
-        "http://127.0.0.1:8000/jobs/1/"
+        "http://127.0.0.1:8000/data-base/jobs/5/",
+        "http://127.0.0.1:8000/data-base/jobs/1/"
       ]
     }
   ],
@@ -118,34 +118,34 @@
     {
       "name": "Designer",
       "paradigms": [
-        "http://127.0.0.1:8000/paradigms/1/"
+        "http://127.0.0.1:8000/data-base/paradigms/1/"
       ]
     },
     {
       "name": "Statistician",
       "paradigms": [
-        "http://127.0.0.1:8000/paradigms/2/"
+        "http://127.0.0.1:8000/data-base/paradigms/2/"
       ]
     },
     {
       "name": "Marketing Manager",
       "paradigms": [
-        "http://127.0.0.1:8000/paradigms/2/",
-        "http://127.0.0.1:8000/paradigms/3/"
+        "http://127.0.0.1:8000/data-base/paradigms/2/",
+        "http://127.0.0.1:8000/data-base/paradigms/3/"
       ]
     },
     {
       "name": "Artist",
       "paradigms": [
-        "http://127.0.0.1:8000/paradigms/1/"
+        "http://127.0.0.1:8000/data-base/paradigms/1/"
       ]
     },
     {
       "name": "Computer Programmer",
       "paradigms": [
-        "http://127.0.0.1:8000/paradigms/1/",
-        "http://127.0.0.1:8000/paradigms/2/",
-        "http://127.0.0.1:8000/paradigms/3/"
+        "http://127.0.0.1:8000/data-base/paradigms/1/",
+        "http://127.0.0.1:8000/data-base/paradigms/2/",
+        "http://127.0.0.1:8000/data-base/paradigms/3/"
       ]
     }
   ],

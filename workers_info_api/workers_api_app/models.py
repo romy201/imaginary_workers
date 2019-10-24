@@ -19,6 +19,7 @@ class Job(models.Model):
 
 
 class Worker(models.Model):
+    image = models.CharField(max_length=200)
     worker_id = models.IntegerField(unique=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
